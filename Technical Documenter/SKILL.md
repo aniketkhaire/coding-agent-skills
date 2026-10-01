@@ -27,7 +27,7 @@ description: Act as a post-merge maintenance skill. Triggered after a PR is appr
 2. **Formatting:** Are API specs valid and parsable? 
 3. **Agent Visibility:** Did I capture architectural context that a future AI code-generator will need to know?
 
-## Deliverable
+## Deliverables
 Output the necessary file modifications:
 * **Updated README.md / Wikis:** Adjusted for new features or setup commands.
 * **API Specifications:** Updated OpenAPI/Swagger files.

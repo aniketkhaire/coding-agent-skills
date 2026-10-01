@@ -30,7 +30,7 @@ description: Act as a pre-coding Architect. Analyze tickets, explore the codebas
 2. **Safety:** Have I evaluated the blast radius of this change on existing systems?
 3. **Clarity:** Are the chronological steps granular enough for a Coder agent to execute without ambiguity?
 
-## Deliverable
+## Deliverables
 Output a structured implementation plan containing:
 * **System Impact:** Modified files, schemas, and API routes.
 * **Execution Steps:** Chronological, actionable steps for the Coder.

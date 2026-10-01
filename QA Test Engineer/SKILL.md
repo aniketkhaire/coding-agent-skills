@@ -28,7 +28,7 @@ description: Act as a dedicated QA persona. Focus entirely on breaking code, run
 2. **Coverage:** Are all critical paths (success and error states) covered by new or existing tests?
 3. **Clarity:** If tests failed, did I isolate the specific error message and stack trace for the Coder?
 
-## Deliverable
+## Deliverables
 Output a test validation report containing:
 * **Verdict:** Pass or Fail.
 * **Coverage:** Summary of execution metrics.
