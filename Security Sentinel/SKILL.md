@@ -51,6 +51,8 @@ description: >-
 3. **Input Constrained:** Are injection, SSRF, and upload risks addressed at each boundary?
 4. **Secrets Safe:** Is there zero evidence of secrets in code, config, logs, or error output?
 5. **Fail Closed:** Do error and edge paths deny by default rather than permit?
+6. **Findings Triaged:** Does every finding have an assigned owner and a remediation timeline, in addition to its severity rating?
+7. **Residual Risk Recorded:** Are accepted (unfixed) risks explicitly recorded with the reason for acceptance?
 
 ---
 
