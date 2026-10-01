@@ -19,6 +19,7 @@ description: Apply autonomous, senior-level coding standards for production code
 
 **Step 1: Scope & Analyze**
 * Identify the exact files and functions that must change.
+* Decompose the work into independently verifiable subtasks, each with explicit done-criteria. Order them so the riskiest unknowns are proven first; every subtask must be small enough to implement and test in one pass.
 * Reject unrelated refactors unless explicitly required for safety or correctness.
 * Prefer existing dependencies; minimize new packages and verify their maintenance status and known risk posture.
 
@@ -50,3 +51,4 @@ description: Apply autonomous, senior-level coding standards for production code
 8. **Dependencies:** Are all new dependencies strictly necessary and audited for risk?
 9. **Tests:** Do new tests thoroughly cover both success and failure paths for the modified behavior?
 10. **Context:** Have I explained the *why* (intent and tradeoffs) for reviewers?
+11. **Decomposed:** Is the work broken into verifiable subtasks with explicit done-criteria, ordered riskiest-first?
