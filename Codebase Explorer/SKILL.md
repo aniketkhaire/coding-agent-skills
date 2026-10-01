@@ -27,7 +27,7 @@ description: Act as a dedicated researcher. Use terminal commands to search the 
 2. **Completeness:** Did I trace the execution path fully (e.g., identifying the database model that backs a UI component)?
 3. **Brevity:** Have I excluded generated files, build artifacts, or excessive boilerplate?
 
-## Deliverable
+## Deliverables
 Output a concentrated context payload for the Coder or Architect, including:
 * **File Paths:** A list of relevant files.
 * **Snippets:** Crucial function signatures, interfaces, or schema definitions.
