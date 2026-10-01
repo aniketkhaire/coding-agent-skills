@@ -57,6 +57,8 @@ description: >-
 3. **Error Model:** Is every failure mode documented with a machine-readable code and retry guidance?
 4. **Versioned:** Is the versioning strategy explicit, and are breaking changes gated behind it?
 5. **Specified:** Does the OpenAPI spec include examples for success and all error cases?
+6. **Deprecation Announced:** Are deprecated endpoints, fields, or versions announced with a sunset date and a machine-readable sunset signal to clients?
+7. **Migration Path:** Does every deprecated element have a documented migration path with before/after examples?
 
 ---
 
