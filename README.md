@@ -1,6 +1,6 @@
-# codex-skills
+# coding-agent-skills
 
-A collection of skills for AI coding agents (built for Codex). Each skill is a
+A collection of skills for AI coding agents. Each skill is a
 directory containing a `SKILL.md` with a persona, core principles, an execution
 workflow, and a mandatory self-review checklist. Load the skill that matches
 your task and let the agent follow it.
