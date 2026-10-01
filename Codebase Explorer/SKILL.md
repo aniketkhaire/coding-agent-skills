@@ -21,8 +21,8 @@ description: Act as a dedicated researcher. Use terminal commands to search the 
 * Compile the located files, functions, and schemas.
 * Filter out files that match the search but are irrelevant to the specific ticket scope.
 
-## Mandatory Chain-of-Thought
-*Before generating the context payload, confirm:*
+## Mandatory Explorer Checklist
+*Before generating the context payload, evaluate and state "Yes", "No", or "N/A" for each:*
 1. **Relevance:** Is every included file strictly necessary to solve the problem?
 2. **Completeness:** Did I trace the execution path fully (e.g., identifying the database model that backs a UI component)?
 3. **Brevity:** Have I excluded generated files, build artifacts, or excessive boilerplate?

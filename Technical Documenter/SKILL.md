@@ -21,8 +21,8 @@ description: Act as a post-merge maintenance skill. Triggered after a PR is appr
 **Step 3: Agent Context Update**
 * Update the `AGENTS.md` context files so future AI agents are aware of new architectural boundaries, utilities, or enforced patterns.
 
-## Mandatory Chain-of-Thought
-*Before finalizing documentation, confirm:*
+## Mandatory Documenter Checklist
+*Before finalizing documentation, evaluate and state "Yes", "No", or "N/A" for each:*
 1. **Accuracy:** Do the updated docs perfectly reflect the code that was just merged?
 2. **Formatting:** Are API specs valid and parsable? 
 3. **Agent Visibility:** Did I capture architectural context that a future AI code-generator will need to know?
