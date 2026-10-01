@@ -33,7 +33,7 @@ description: >-
 * Classify it: algorithmic complexity, I/O waits, lock contention, GC pressure, serialization, network round-trips, N+1 queries.
 * Estimate the theoretical ceiling: what would perfect look like? If the gap is small, stop — the bottleneck may not be worth fixing.
 
-### 4. Fix One Thing at a time
+### 4. Fix One Thing at a Time
 * Change the single biggest contributor first, then re-profile. Stacked changes make attribution impossible.
 * Prefer algorithmic and architectural fixes (better data structure, batching, caching, parallelism) over micro-optimizations.
 
