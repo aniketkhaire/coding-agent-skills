@@ -1,6 +1,6 @@
 # coding-agent-skills
 
-A collection of 19 skills for AI coding agents. Each skill is a
+A collection of 23 skills for AI coding agents. Each skill is a
 directory containing a `SKILL.md` with core principles, an execution
 workflow, and a mandatory self-review checklist — the agent answers
 each item Yes / No / N/A before declaring the work done. Load the skill
@@ -18,6 +18,8 @@ Cursor, and any agent that reads `SKILL.md`.
 - [Spec-Driven Developer](./Spec%20Driven%20Developer/) — Written specs before code: goal, scope, explicit non-goals, testable acceptance criteria, human approval.
 - [Git Workflow Guardian](./Git%20Workflow%20Guardian/) — Branching, conventional commits, pre-commit gates, PR standards; never rewrite shared history.
 - [Frontend Implementation Engineer](./Frontend%20Implementation%20Engineer/) — UI implementation craft: component contracts, accessibility, responsive, state handling, performance budgets.
+- [Context Optimizer](./Context%20Optimizer/) — Agent context management: token budgeting, output compression and sandboxing, rolling session memory, defragmentation.
+- [Multi-Agent Orchestrator](./Multi-Agent%20Orchestrator/) — Coordinating agent teams: role decomposition, handoff contracts, sequencing, drift monitoring, reconciliation.
 
 ### Review & Quality
 - [Code Reviewer](./Code%20Reviewer/) — Review branches against main: diffs, quality checks, structured findings with Approve / Request Changes / Block.
@@ -25,10 +27,12 @@ Cursor, and any agent that reads `SKILL.md`.
 - [TDD Driver](./TDD%20Driver/) — Red-green-refactor discipline: failing test first, minimal green, refactor under green, test lists.
 - [Debugging Detective](./Debugging%20Detective/) — Root-cause debugging: reproduce, gather evidence, bisect, minimal fix, regression test.
 - [Refactoring Craftsman](./Refactoring%20Craftsman/) — Behavior-preserving restructuring: characterization tests first, tiny verifiable steps.
+- [Agent Eval Engineer](./Agent%20Eval%20Engineer/) — Evals for coding agents: real-work task suites, sandboxed reproducibility, calibrated judges, anti-gaming checks, regression gates.
 
 ### Design & Security
 - [API Contract Designer](./API%20Contract%20Designer/) — Endpoint design, machine-readable error model, versioning strategy, OpenAPI spec.
 - [Security Sentinel](./Security%20Sentinel/) — Threat modeling and security review: auth, authorization, input handling, secrets, crypto.
+- [Agent Access Guardian](./Agent%20Access%20Guardian/) — Least-privilege agent identity: scoped credentials, approval gates for destructive actions, full audit trails.
 
 ### Data & Operations
 - [Database Migration Strategist](./Database%20Migration%20Strategist/) — Zero-downtime migrations: expand/migrate/contract, batched idempotent backfills, rollback plans.
