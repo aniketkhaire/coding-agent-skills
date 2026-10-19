@@ -1,44 +1,70 @@
 # coding-agent-skills
 
-A collection of 23 skills for AI coding agents. Each skill is a
-directory containing a `SKILL.md` with core principles, an execution
-workflow, and a mandatory self-review checklist — the agent answers
-each item Yes / No / N/A before declaring the work done. Load the skill
-that matches your task and let the agent follow it.
+[![skills.sh](https://skills.sh/b/aniketkhaire/coding-agent-skills)](https://skills.sh/aniketkhaire/coding-agent-skills)
+[![GitHub stars](https://img.shields.io/github/stars/aniketkhaire/coding-agent-skills)](https://github.com/aniketkhaire/coding-agent-skills/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-open_standard-blue)](https://agentskills.io)
 
-Written in the open [Agent Skills](https://agentskills.io) format and
-packaged as an [Agent Plugins](https://agent-plugins.org) 1.0 plugin;
-works with Codex, Claude Code, Cursor, VS Code, and any agent that reads
-`SKILL.md`.
+23 senior-level skills that turn a coding agent into a disciplined engineering team — covering the full lifecycle from ticket to production.
+
+Coding agents are fast typists with no judgment. They'll write the code, skip the plan, ignore the edge cases, and declare victory. These skills fix that: each one encodes how a senior engineer actually works — the principles, the workflow, and a mandatory self-review checklist the agent must answer (Yes / No / N/A) before it's allowed to say "done".
 
 ## Install
 
-**Claude Code** (plugin marketplace):
+**Claude Code**
 
 ```bash
 claude plugin marketplace add aniketkhaire/coding-agent-skills
 claude plugin install coding-agent-skills
 ```
 
-**Any agent** (via [skills.sh](https://skills.sh)):
+**Any other agent** ([skills.sh](https://skills.sh))
 
 ```bash
 npx skills add aniketkhaire/coding-agent-skills
 ```
 
-**Cursor / VS Code / other Agent Plugins hosts:** this repo is a
-spec-conformant Agent Plugin (`plugin.json` at the root, skills under
-`skills/`), so it loads directly in Cursor, VS Code, and any client
-implementing the Agent Plugins 1.0 standard. Public Cursor Marketplace
-listings are submitted at
-[cursor.com/marketplace/publish](https://cursor.com/marketplace/publish)
-(manual review; plugins must be open source).
+**Cursor / VS Code** — this repo is a spec-conformant [Agent Plugins](https://agent-plugins.org) 1.0 plugin (`plugin.json` at the root), so it loads directly in Cursor, VS Code, and any client implementing the standard.
 
-**Claude Directory:** plugin bundles can be submitted for review at
-[claude.ai/directory/manage](https://claude.ai/directory/manage)
-(requires a paid Claude plan; the repository must be public).
+To update, re-run the install command.
 
-## Skills
+## How it works
+
+Install once. From then on, the agent reads each skill's description, loads the one that matches your task, and follows it:
+
+1. **Principles** — the non-negotiables, e.g. "reproduce before you theorize", "profile before you optimize".
+2. **Workflow** — the step-by-step procedure for the task.
+3. **Mandatory checklist** — every item answered Yes / No / N/A. The agent answers the whole list before declaring the work done.
+
+The 23 skills cover the whole lifecycle, not a bag of tricks:
+
+- **Plan** — System Architect, Spec-Driven Developer, Codebase Explorer
+- **Build** — Autonomous Senior Developer, TDD Driver, Frontend Implementation Engineer, Multi-Agent Orchestrator, Context Optimizer, API Contract Designer, Database Migration Strategist
+- **Review** — Code Reviewer, QA Test Engineer, Debugging Detective, Refactoring Craftsman, Security Sentinel, Agent Eval Engineer, Agent Access Guardian
+- **Ship** — Git Workflow Guardian, Delivery & Release Engineer
+- **Operate** — Incident Responder, Observability Engineer, Performance Tuner, Technical Documenter
+
+## Examples
+
+```text
+Review this branch against main and give me a verdict.
+```
+
+```text
+Checkout is crashing in production but the tests are green. Find the root cause.
+```
+
+```text
+Plan this ticket before writing any code.
+```
+
+```text
+Split the users table with zero downtime. Show me the migration plan first.
+```
+
+The agent picks the right skill on its own — Code Reviewer, Debugging Detective, System Architect, Database Migration Strategist — and works it end to end.
+
+## The skills
 
 ### Build
 - [Autonomous Senior Developer](./skills/autonomous-senior-developer/) — Senior-level coding standards for production code: surgical diffs, resilience, security, CI/CD survival.
@@ -72,6 +98,13 @@ listings are submitted at
 
 ### Docs
 - [Technical Documenter](./skills/technical-documenter/) — Post-merge maintenance: update READMEs, regenerate API specs, refresh agent context files.
+
+## Design principles
+
+- **Checklists, not vibes.** Every skill ends in a mandatory Yes / No / N/A checklist. "Done" is a verdict, not a feeling.
+- **Senior judgment, encoded.** Every skill ships only after an adversarial review pass whose only job is to break it.
+- **Composable, not prescriptive.** Skills trigger on task match and combine freely. No framework to buy into, no process that owns you.
+- **Agent-agnostic.** Written in the open [Agent Skills](https://agentskills.io) format and packaged as [Agent Plugins](https://agent-plugins.org) 1.0. Works with Codex, Claude Code, Cursor, VS Code, and 40+ other agents.
 
 ## Adding a skill
 
